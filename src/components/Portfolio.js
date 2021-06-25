@@ -101,36 +101,34 @@ const popupboxConfigTaskManager = {
 }
 
   return (
-    <div>
-      <div className="portfolio-wrapper">
-        <div className="container">
-          <h1 className="text-uppercase text-center py-5">portfolio</h1>
-          <div className="image-box-wrapper justify-content-center">  
-            <div className="portfolio-image-box" onClick={openPopupboxRunisfun}>
-              <img className="portfolio-image" src={netflix} alt="RunIsFun Project..." />
-              <div className="overflow"></div>
-              <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
-            </div>
-            {/* - */}
-            <div className="portfolio-image-box" onClick={openPopupboxFunvidrun}>
-              <img className="portfolio-image" src={cityGuide} alt="FunVidRun Project..." />
-              <div className="overflow"></div>
-              <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
-            </div>
-            {/* - */}
-            <div className="portfolio-image-box" onClick={openPopupboxPortfolio}>
-              <img className="portfolio-image" src={portfolio} alt="Portfolio React Project..." />
-              <div className="overflow"></div>
-              <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
-            </div>
-            {/* - */}
-            <div className="portfolio-image-box" onClick={openPopupboxTaskManager}>
-              <img className="portfolio-image" src={taskManager} alt="Task Manager React and Redux Project..." />
-              <div className="overflow"></div>
-              <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
-            </div>
-          </div>          
-        </div>
+    <div id="portfolio" className="portfolio-wrapper">
+      <div className="container">
+        <h1 className="text-uppercase text-center py-5">portfolio</h1>
+        <div className="image-box-wrapper justify-content-center">  
+          <div className="portfolio-image-box" onClick={openPopupboxRunisfun}>
+            <img className="portfolio-image" src={netflix} alt="RunIsFun Project..." />
+            <div className="overflow"></div>
+            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+          </div>
+          {/* - */}
+          <div className="portfolio-image-box" onClick={openPopupboxFunvidrun}>
+            <img className="portfolio-image" src={cityGuide} alt="FunVidRun Project..." />
+            <div className="overflow"></div>
+            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+          </div>
+          {/* - */}
+          <div className="portfolio-image-box" onClick={openPopupboxPortfolio}>
+            <img className="portfolio-image" src={portfolio} alt="Portfolio React Project..." />
+            <div className="overflow"></div>
+            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+          </div>
+          {/* - */}
+          <div className="portfolio-image-box" onClick={openPopupboxTaskManager}>
+            <img className="portfolio-image" src={taskManager} alt="Task Manager React and Redux Project..." />
+            <div className="overflow"></div>
+            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+          </div>
+        </div>          
       </div>
       <PopupboxContainer {...popupboxConfigRunisfun} />
       <PopupboxContainer {...popupboxConfigFunvidrun} />
