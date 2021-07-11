@@ -18,7 +18,7 @@ const Footer = () => {
         <div className="row">
           <div className="col-lg-4 col-md-6 col-sm-6">
             <div className="d-flex">
-              <p>city Moscow main street 2020 office #223</p>
+              <p>North York, Toronto, ON, Canada</p>
             </div>
             <div className="d-flex">
               <a href="tel: 647-518-6775">+1(647)518-6775</a>
@@ -69,8 +69,8 @@ const Footer = () => {
                 <RedditIcon className="mx-3" size={36}/>
               </RedditShareButton>
               <LinkedinShareButton
-                url={"https://www.youtube.com/8020coding"}
-                quote={"FullStack Developer"}
+                url={"https://www.linkedin.com/in/asker-alshanbayev"}
+                quote={"Front-end Developer"}
                 hashtag="javascript"
               >
                 <LinkedinIcon  className="mx-3" size={36}/>
