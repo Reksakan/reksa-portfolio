@@ -1,7 +1,7 @@
 import React from 'react';
-import netflix from "../images/netflix.png";
-import cityGuide from "../images/city-guide-app.png";
-import portfolio from "../images/portfolio.png";
+import netflix from "../images/runisfun.JPG";
+import cityGuide from "../images/BrainFlix.JPG";
+import portfolio from "../images/portfolio5.JPG";
 import taskManager from "../images/task-manager.png";
 //FONT AWESOME IMPORTS
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -19,7 +19,7 @@ const openPopupboxRunisfun =() => {
   const content = (
     <>
       <img className="portfolio-image-popupbox" src={netflix} alt="RunIsFun Project..." />
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit cupiditate molestias modi id, maiores voluptas at labore quis officiis laboriosam tempore quia et harum est odio, iste eveniet? Perspiciatis, optio?</p>
+      <p>Web Site that helps athletic consumers purchase their next pair of runners. The Site is using a client-server model (front-end & back-end) built with React and NodeJS. Existing filters assist consumers to sort runners by gender, brand, type of activity, model, colour, size and quantity to buy. The RunIsFun also familiarizes users with the model description and the availability of shoes in stock. </p>
       <b>Demo: </b><a className="hyper-link" onClick={()=> window.open("https://runisfun.herokuapp.com/", "_blank")}>https://runisfun.herokuapp.com/</a>
       <br />
       <b>GitHub: </b><a className="hyper-link" onClick={()=> window.open("https://github.com/Reksakan/askerkan-runisfun")}>https://github.com/Reksakan/askerkan-runisfun</a>
@@ -42,7 +42,9 @@ const openPopupboxFunvidrun =() => {
   const content = (
     <>
       <img className="portfolio-image-popupbox" src={cityGuide} alt="FunVidRun Project..." />
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit cupiditate molestias modi id, maiores voluptas at labore quis officiis laboriosam tempore quia et harum est odio, iste eveniet? Perspiciatis, optio?</p>
+      <p>A responsive full-stack web application that mimics YouTube. I created this site as one of my projects as a student in BrainStation program. The home page features a large full-width video player, information about the video including the uploader’s name, views and likes counts, and a written description. It also features a comment section, where users can submit comments about the video. </p>
+      <b>Demo: </b><a className="hyper-link" onClick={()=> window.open("https://funvidrun.herokuapp.com/", "_blank")}>https://funvidrun.herokuapp.com/</a>
+      <br />
       <b>GitHub: </b><a className="hyper-link" onClick={()=> window.open("https://github.com/Reksakan/asker-alshanbayev-brainflix")}>https://github.com/Reksakan/asker-alshanbayev-brainflix</a>
     </>
   )
@@ -80,16 +82,16 @@ const popupboxConfigPortfolio = {
 }
 
 //Task Manager using React and Redux Project
-const openPopupboxTaskManager =() => {
-  const content = (
-    <>
-      <img className="portfolio-image-popupbox" src={taskManager} alt="TaskManager Project..." />
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit cupiditate molestias modi id, maiores voluptas at labore quis officiis laboriosam tempore quia et harum est odio, iste eveniet? Perspiciatis, optio?</p>
-      <b>GitHub: </b><a className="hyper-link" onClick={()=> window.open("https://github.com/Reksakan/reksa-portfolio")}>https://github.com/Reksakan/reksa-portfolio</a>
-    </>
-  )
-  PopupboxManager.open({ content })
-}
+// const openPopupboxTaskManager =() => {
+//   const content = (
+//     <>
+//       <img className="portfolio-image-popupbox" src={taskManager} alt="TaskManager Project..." />
+//       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit cupiditate molestias modi id, maiores voluptas at labore quis officiis laboriosam tempore quia et harum est odio, iste eveniet? Perspiciatis, optio?</p>
+//       <b>GitHub: </b><a className="hyper-link" onClick={()=> window.open("https://github.com/Reksakan/reksa-portfolio")}>https://github.com/Reksakan/reksa-portfolio</a>
+//     </>
+//   )
+//   PopupboxManager.open({ content })
+// }
 
 const popupboxConfigTaskManager = {
   titleBar: {
@@ -123,11 +125,11 @@ const popupboxConfigTaskManager = {
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
           {/* - */}
-          <div className="portfolio-image-box" onClick={openPopupboxTaskManager}>
+          {/* <div className="portfolio-image-box" onClick={openPopupboxTaskManager}>
             <img className="portfolio-image" src={taskManager} alt="Task Manager React and Redux Project..." />
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
-          </div>
+          </div> */}
         </div>          
       </div>
       <PopupboxContainer {...popupboxConfigRunisfun} />

@@ -1,6 +1,3 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
-
 :root {
   --primary-white: #ffffff;
   --primary-light-grey: #f4f4f4;
@@ -24,7 +21,15 @@ nav {
   z-index: 2;
 }
 .logo{
-  width: 5rem;
+  margin: auto;
+  width: 4rem;
+  cursor: pointer;
+}
+
+@media(max-width: 768px) {
+  .logo{
+    display: none;
+  }
 }
 
 /********MENU LINK*********/
@@ -46,6 +51,8 @@ nav ul li {
 }
 
 .navbar-brand {
+  display: flex;
+  align-items: center;
   max-width: 17.25rem;
   padding: 0 !important;
   height: 6rem !important;
@@ -57,7 +64,7 @@ nav ul li {
   }
 }
 
-.navbar-nav > li > a.active, .navbar-nav > li > a:focus {
+.navbar-nav > li > a.active,  .navbar-nav > li > a:focus {
   border-top: 0.1875rem solid var(--primary-orange);
 }
 
@@ -65,9 +72,11 @@ nav ul li {
   border-top: 0.1875rem solid var(--primary-orange);
 }
 
+
 /*************************HEADER************************/
 
 .header-wraper {
+  margin-top: 6rem;
   position: relative;
   background: url(background.jpg) no-repeat;
   background-size: cover;
@@ -130,7 +139,7 @@ nav ul li {
   text-decoration: none;
   background-color: var(--primary-red);
   color: var(--primary-white);
-  transition: .2s ease-in-out;
+  transition:  .2s ease-in-out;
 }
 
 /*************************PARTICLES JS************************/
@@ -149,6 +158,7 @@ nav ul li {
 }
 
 /*************************ABOUT ME************************/
+
 .photo-wrap {
   display: flex;
   justify-content: center;
@@ -232,6 +242,7 @@ nav ul li {
 /************************* EXPERIENCE ************************/
 .experience {
   padding: 0.7rem;
+  background: var(--primary-light-grey);
 }
 .experience-wrapper {
   position: relative;
@@ -271,6 +282,10 @@ nav ul li {
 .timeline-block-left {
   float: left;
   direction: rtl;
+}
+
+.timeline-company {
+  margin-bottom: 0.3rem;
 }
 
 .marker {
@@ -345,6 +360,38 @@ nav ul li {
 
 .popupbox-wrapper {
   margin-top: 7rem;
+}
+
+/************************* SKILLS ************************/
+
+.skills-wrapper h1 {
+  color: var(--primary-orange)
+}
+
+.icon-box-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+  padding-left: 0px;
+}
+
+.icon-box {
+  list-style: none;
+  text-align: center;
+  width: 20%;
+  height: 20%;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  font-size: 1.5rem;
+  padding: 4rem;
+}
+
+@media(max-width:1400px) {
+  .icon-box {
+    padding: 4px;
+    font-size: 0.7rem;
+    margin-left: 0.5rem;
+  }
 }
 
 /************************* OVERFLOW ************************/
@@ -610,4 +657,14 @@ textarea.form-control {
 
 .footer p {
   margin-bottom: 0;
+}
+
+.bi {
+  margin: 0 0.5rem;
+}
+
+.bi:hover {
+  text-decoration: none;
+  color: var(--primary-orange);
+  cursor: pointer;
 }
